@@ -7,7 +7,7 @@ var app = express();
 console.log(port);
 
 app.get('/', function (req, res) {
-    res.send("FCC App 1");
+    res.send("FCC App 2");
 });
 
 app.listen(port);
