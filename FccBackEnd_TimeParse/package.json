@@ -1,0 +1,13 @@
+{
+  "name": "fcc-back-end_time-parse",
+  "version": "0.0.0",
+  "description": "FccBackEnd_TimeParse",
+  "main": "app.js",
+  "author": {
+    "name": "Rehas",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
