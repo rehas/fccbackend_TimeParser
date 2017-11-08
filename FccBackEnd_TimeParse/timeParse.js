@@ -4,6 +4,10 @@ module.exports = function (str) {
     
     var inp = decodeURI(str).slice(1);
     
+    if (inp.length < 2) {
+        return "./index.html"
+    }
+    
     console.log("Is this a date: " + moment(inp, "MMMM DD YYYY", true).isValid());
     
     if (moment(inp, "MMMM DD YYYY", true).isValid()) { 

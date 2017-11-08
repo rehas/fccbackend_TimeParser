@@ -2,6 +2,7 @@
 var port = process.env.PORT;
 var app = express();
 var tp = require("./timeParse.js");
+var path = require("path");
 
 
 console.log(port);
@@ -13,6 +14,15 @@ app.get('*', function (req, res) {
     //console.log(query.toString());
     //console.log(queryKey);
     console.log(ou)
+    
+    var result = tp(ou);
+    
+    if (tp(ou) === "./index.html") {
+        
+        res.sendFile(path.join(__dirname+'/index.html'));
+        return;
+    
+    }
 
     res.send(tp(ou));
 });
