@@ -1,4 +1,4 @@
-# fccbackend_TimeParser
+# fcc-backend-challenge_TimeParser
 Simple Time Parser microservice through query params
 
 ## TimeParser
